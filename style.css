@@ -15,7 +15,7 @@ body{
     background-color:white;
     justify-content:center;
     position:fixed;
-    z-index:1000;
+    z-index:2000;
 }
 .nav .headdiv,.nav .optionsdiv,.nav .togglediv{
     width:100%;
@@ -28,14 +28,18 @@ body{
     justify-content:right;
     margin-right:2%;
 }
-.nav .togglediv #theme,#toggle{
+.nav .togglediv #modeToggle,#modeToggles{
     padding:1.5% 2%;
     margin-left:1.5%;
     color:black;
     border-radius:5px;
     box-shadow:0px 0px 1px rgba(0,0,0,0.9);
+    transition:.2s ease-in-out;
 }
-.nav .togglediv #theme{
+.nav .togglediv #modeToggles{
+    padding:0.34% 2%;
+}
+.nav .togglediv #modeToggle{
     color:blue;
     box-shadow:0px 0px 1px rgba(0,0,255,0.9);
 }
@@ -54,18 +58,20 @@ body{
     font-weight:bold;
     color:black;
     z-index:1000;
+    transition:.3s ease-in-out;
 }
 .nav .optionsdiv a:hover{
     box-shadow:0px 0px 3px rgba(0,0,0,0.3);
     border-radius:5px;
+    font-size:large;
     color:blue;
 }
-.nav #theme:hover{
+.nav #modeToggle:hover{
     color:white;
     background-color:blue;
     box-shadow:0px 0px 2px rgba(0,0,255,0.9);
 }
-.nav #toggle:hover{
+.nav #modeToggles:hover{
     color:white;
     background-color:black;
     box-shadow:0px 0px 2px rgba(0,0,0,0.9);
@@ -105,6 +111,11 @@ body{
     background-color:blue;
     color:white;
     font-family:'Poppins',Verdana;
+    transition:.2s ease-in-out;
+}
+.homesecdiv button:hover{
+    background-color:transparent;
+    color:blue;
 }
 .homesecdiv a{
     font-size:x-large;
@@ -158,9 +169,14 @@ body{
     background-color:blue;
     color:white;
     font-family:'Poppins',Verdana;
+    transition:.2s ease-in-out;
+}
+.aboutcontentdiv button:hover{
+    background-color:transparent;
+    color:blue;
 }
 .skillsecdiv{
-    margin:6%;
+    margin:3.5% 6%;
 }
 .skills{
     display:flex;
@@ -179,7 +195,8 @@ body{
 }
 .skill label{
     position:absolute;
-    right:2%;
+    top:30%;
+    right:3%;
 }
 .skill i{
     font-size:x-large;
@@ -192,6 +209,7 @@ body{
     height:100%;
     top:0;
     z-index:-1000;
+    transition:.3s ease-in-out;
 }
 .back2{
     position:absolute;
@@ -232,4 +250,607 @@ body{
     height:100%;
     top:0;
     z-index:-1000;
+}
+.servicesecdiv{
+    margin:3% 3%;
+}
+.servicecontentsdiv{
+    display:flex;
+    margin:auto;
+    margin-top:3%;
+    width:75%;
+    justify-content:center;
+    text-align:center;
+    align-items:center;
+    gap:23px;
+}
+.servicediv{
+    width:42%;
+    padding:4%;
+    background:linear-gradient(135deg,whitesmoke,white);
+    box-shadow:0px 0px 5px rgba(0,0,0,0.3);
+}
+.servicediv i{
+    font-size:x-large;
+    color:blue;
+}
+.servicediv .sp{
+    font-weight:bold;
+}
+.projectsecdiv{
+    margin:3% 3%;
+}
+.projectcontentsdiv{
+    margin:auto;
+    margin-top:8%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:90%;
+    gap:30px;
+}
+.projectdiv{
+    width:100%;
+    overflow:hidden;
+    border-radius:20px;
+    position:relative;
+    background-color:blue;
+    box-shadow:0px 0px 5px rgba(0,0,0,0.3);
+}
+.projectdiv img{
+    width:100%;
+    position:relative;
+}
+.pro,.pro2,.pro3,.pro4{
+    position:absolute;
+    top:0;
+    width:100%;
+    height:100%;
+    display:none;
+    background:linear-gradient(rgba(0,0,0,0.4),blue);
+    transition:.3s ease-in-out;
+}
+.pro div,.pro2 div,.pro3 div,.pro4 div{
+    margin:auto;
+    text-align:center;
+    margin-top:12%;
+    width:80%;
+}
+.pro p,.pro2 p,.pro3 p,.pro4 p{
+    color:white;
+}
+.pro a,.pro2 a,.pro3 a,.pro4 a{
+    text-decoration:none;
+    color:white;
+    font-weight:bold;
+    font-family:'Poppins',Verdana;
+}
+.contactsecdiv{
+    margin:3% 6%;
+}
+.contactcontentsdiv{
+    display:flex;
+    justify-content:center;
+    margin-top:8%;
+}
+.contactdiv{
+    width:100%;
+}
+.contactdiv table tr .td{
+    padding:10px 20px;
+}
+.contactdiv form input{
+    margin:2%;
+    padding:3.5% 0%;
+    width:70%;
+    border-style:none;
+    font-family:'Poppins',Verdana;
+    outline:none;
+    border-bottom-style:solid;
+    transition:.2s ease-in-out;
+}
+.contactdiv form input:hover{
+    border-color:blue;
+}
+.contactdiv form input::placeholder{
+    transition:.2s ease-in-out;
+}
+.contactdiv form input:hover::placeholder{
+    color:blue;
+}
+.contactdiv a{
+    text-decoration:none;
+    color:blue;
+}
+.contactdiv i{
+    color:blue;
+    font-size:x-large;
+}
+.contactdiv table tr td span{
+    font-weight:bold;
+}
+.contactdiv button{
+    padding:3% 4%;
+    outline:none;
+    border-style:solid;
+    border-radius:8px;
+    border-color:blue;
+    font-family:'Poppins',Verdana;
+    background-color:blue;
+    color:white;
+    transition:.2s ease-in-out;
+}
+.contactdiv button:hover{
+    background-color:transparent;
+    color:blue;
+}
+.contactdiv .con{
+    color:black;
+}
+.contactdiv #successmsg{
+    font-family:'Poppins',Verdana;
+}
+.bottombardiv{
+    text-align:center;
+    padding:0.5%;
+    color:white;
+    background-color:rgb(30,30,30);
+}
+.bottombardiv a{
+    font-size:x-large;
+    color:white;
+    margin-left:3%;
+}
+.bottombardiv i,p{
+    margin-top:1.5%;
+}
+#about,#skill,#service,#project,#contact{
+    color:white;
+}
+
+/* Red Theme */
+.red-theme .nav .headdiv,.red-theme .nav #modeToggle,
+.red-theme .homesecdiv #name,.red-theme .skillsecdiv span,
+.red-theme .sevicesecdiv span,.red-theme .servicesecdiv span,
+.red-theme .servicesecdiv i,.red-theme .projectsecdiv span,
+.red-theme .contactsecdiv span,.red-theme .contactsecdiv i,
+.red-theme .contactsecdiv a{
+    color:red;
+}
+.red-theme .nav #modeToggle{
+    box-shadow:0px 0px 1px rgba(255,0,0,0.9);
+}
+.red-theme .homesecdiv button,.red-theme .aboutsecdiv button,
+.red-theme .contactsecdiv button{
+    background-color:red;
+    color:white;
+    border-color:red;
+}
+.red-theme .projectsecdiv #procontent,
+.red-theme .projectsecdiv #procontent2,
+.red-theme .projectsecdiv #procontent3,
+.red-theme .projectsecdiv #procontent4{
+    background:linear-gradient(rgba(0,0,0,0.4),red);
+}
+.red-theme .projectdiv{
+    background-color:red;
+}
+.red-theme .nav #modeToggle:hover{
+    background-color:red;
+    color:white;
+}
+.red-theme .homesecdiv button:hover,
+.red-theme .aboutsecdiv button:hover,
+.red-theme .contactsecdiv button:hover{
+    color:red;
+    background-color:transparent;
+}
+.red-theme .nav a:hover,.red-theme .homesecdiv i:hover,
+.red-theme .aboutsecdiv span,.red-theme .aboutsecdiv a{
+    color:red;
+}
+.red-theme .contactsecdiv form input:hover{
+    border-color:red;
+}
+.red-theme .contactsecdiv form input:hover::placeholder{
+    color:red;
+}
+.red-theme .contactsecdiv .con{
+    color:black;
+}
+
+
+/* Violet Theme */
+.violet-theme .nav .headdiv,.violet-theme .nav #modeToggle,
+.violet-theme .homesecdiv #name,.violet-theme .skillsecdiv span,
+.violet-theme .sevicesecdiv span,.violet-theme .servicesecdiv span,
+.violet-theme .servicesecdiv i,.violet-theme .projectsecdiv span,
+.violet-theme .contactsecdiv span,.violet-theme .contactsecdiv i,
+.violet-theme .contactsecdiv a{
+    color:darkviolet;
+}
+.violet-theme .nav #modeToggle{
+    box-shadow:0px 0px 1px rgba(148,0,211,0.9);
+}
+.violet-theme .homesecdiv button,.violet-theme .aboutsecdiv button,
+.violet-theme .contactsecdiv button{
+    background-color:darkviolet;
+    color:white;
+    border-color:darkviolet;
+}
+.violet-theme .projectsecdiv #procontent,
+.violet-theme .projectsecdiv #procontent2,
+.violet-theme .projectsecdiv #procontent3,
+.violet-theme .projectsecdiv #procontent4{
+    background:linear-gradient(rgba(0,0,0,0.4),darkviolet);
+}
+.violet-theme .projectdiv{
+    background-color:darkviolet;
+}
+.violet-theme .nav #modeToggle:hover{
+    background-color:darkviolet;
+    color:white;
+}
+.violet-theme .homesecdiv button:hover,
+.violet-theme .aboutsecdiv button:hover,
+.violet-theme .contactsecdiv button:hover{
+    color:darkviolet;
+    background-color:transparent;
+}
+.violet-theme .nav a:hover,.violet-theme .homesecdiv i:hover,
+.violet-theme .aboutsecdiv span,.violet-theme .aboutsecdiv a{
+    color:darkviolet;
+}
+.violet-theme .contactsecdiv form input:hover{
+    border-color:darkviolet;
+}
+.violet-theme .contactsecdiv form input:hover::placeholder{
+    color:darkviolet;
+}
+.violet-theme .contactsecdiv .con{
+    color:black;
+}
+
+
+/* Green Theme */
+.green-theme .nav .headdiv, .green-theme .nav #modeToggle,
+.green-theme .homesecdiv #name, .green-theme .skillsecdiv span,
+.green-theme .sevicesecdiv span, .green-theme .servicesecdiv span,
+.green-theme .servicesecdiv i, .green-theme .projectsecdiv span,
+.green-theme .contactsecdiv span, .green-theme .contactsecdiv i,
+.green-theme .contactsecdiv a {
+    color: limegreen;
+}
+.green-theme .nav #modeToggle {
+    box-shadow: 0px 0px 1px rgba(50,205,50,0.9);
+}
+.green-theme .homesecdiv button, .green-theme .aboutsecdiv button,
+.green-theme .contactsecdiv button {
+    background-color: limegreen;
+    color: white;
+    border-color: limegreen;
+}
+.green-theme .projectsecdiv #procontent,
+.green-theme .projectsecdiv #procontent2,
+.green-theme .projectsecdiv #procontent3,
+.green-theme .projectsecdiv #procontent4 {
+    background: linear-gradient(rgba(0,0,0,0.4), limegreen);
+}
+.green-theme .projectdiv {
+    background-color: limegreen;
+}
+.green-theme .nav #modeToggle:hover {
+    background-color: limegreen;
+    color: white;
+}
+.green-theme .homesecdiv button:hover,
+.green-theme .aboutsecdiv button:hover,
+.green-theme .contactsecdiv button:hover {
+    color: limegreen;
+    background-color: transparent;
+}
+.green-theme .nav a:hover, .green-theme .homesecdiv i:hover,
+.green-theme .aboutsecdiv span, .green-theme .aboutsecdiv a {
+    color: limegreen;
+}
+.green-theme .contactsecdiv form input:hover {
+    border-color: limegreen;
+}
+.green-theme .contactsecdiv form input:hover::placeholder {
+    color: limegreen;
+}
+.green-theme .contactsecdiv .con{
+    color:black;
+}
+
+/* Yellow Theme */
+.yellow-theme .nav .headdiv, .yellow-theme .nav #modeToggle,
+.yellow-theme .homesecdiv #name, .yellow-theme .skillsecdiv span,
+.yellow-theme .sevicesecdiv span, .yellow-theme .servicesecdiv span,
+.yellow-theme .servicesecdiv i, .yellow-theme .projectsecdiv span,
+.yellow-theme .contactsecdiv span, .yellow-theme .contactsecdiv i,
+.yellow-theme .contactsecdiv a {
+    color: gold;
+}
+.yellow-theme .nav #modeToggle {
+    box-shadow: 0px 0px 1px rgba(255,215,0,0.9);
+}
+.yellow-theme .homesecdiv button, .yellow-theme .aboutsecdiv button,
+.yellow-theme .contactsecdiv button {
+    background-color: gold;
+    color: white;
+    border-color: gold;
+}
+.yellow-theme .projectsecdiv #procontent,
+.yellow-theme .projectsecdiv #procontent2,
+.yellow-theme .projectsecdiv #procontent3,
+.yellow-theme .projectsecdiv #procontent4 {
+    background: linear-gradient(rgba(0,0,0,0.4), gold);
+}
+.yellow-theme .projectdiv {
+    background-color: gold;
+}
+.yellow-theme .nav #modeToggle:hover {
+    background-color: gold;
+    color: white;
+}
+.yellow-theme .homesecdiv button:hover,
+.yellow-theme .aboutsecdiv button:hover,
+.yellow-theme .contactsecdiv button:hover {
+    color: gold;
+    background-color: transparent;
+}
+.yellow-theme .nav a:hover, .yellow-theme .homesecdiv i:hover,
+.yellow-theme .aboutsecdiv span, .yellow-theme .aboutsecdiv a {
+    color: gold;
+}
+.yellow-theme .contactsecdiv form input:hover {
+    border-color: gold;
+}
+.yellow-theme .contactsecdiv form input:hover::placeholder {
+    color: gold;
+}
+.yellow-theme .contactsecdiv .con{
+    color:black;
+}
+
+/* Orange Theme */
+.orange-theme .nav .headdiv, .orange-theme .nav #modeToggle,
+.orange-theme .homesecdiv #name, .orange-theme .skillsecdiv span,
+.orange-theme .sevicesecdiv span, .orange-theme .servicesecdiv span,
+.orange-theme .servicesecdiv i, .orange-theme .projectsecdiv span,
+.orange-theme .contactsecdiv span, .orange-theme .contactsecdiv i,
+.orange-theme .contactsecdiv a {
+    color: orange;
+}
+.orange-theme .nav #modeToggle {
+    box-shadow: 0px 0px 1px rgba(255,165,0,0.9);
+}
+.orange-theme .homesecdiv button, .orange-theme .aboutsecdiv button,
+.orange-theme .contactsecdiv button {
+    background-color: orange;
+    color: white;
+    border-color: orange;
+}
+.orange-theme .projectsecdiv #procontent,
+.orange-theme .projectsecdiv #procontent2,
+.orange-theme .projectsecdiv #procontent3,
+.orange-theme .projectsecdiv #procontent4 {
+    background: linear-gradient(rgba(0,0,0,0.4), orange);
+}
+.orange-theme .projectdiv {
+    background-color: orange;
+}
+.orange-theme .nav #modeToggle:hover {
+    background-color: orange;
+    color: white;
+}
+.orange-theme .homesecdiv button:hover,
+.orange-theme .aboutsecdiv button:hover,
+.orange-theme .contactsecdiv button:hover {
+    color: orange;
+    background-color: transparent;
+}
+.orange-theme .nav a:hover, .orange-theme .homesecdiv i:hover,
+.orange-theme .aboutsecdiv span, .orange-theme .aboutsecdiv a {
+    color: orange;
+}
+.orange-theme .contactsecdiv form input:hover {
+    border-color: orange;
+}
+.orange-theme .contactsecdiv form input:hover::placeholder {
+    color: orange;
+}
+.orange-theme .contactsecdiv .con{
+    color:black;
+}
+
+
+/* Pink Theme */
+.pink-theme .nav .headdiv, .pink-theme .nav #modeToggle,
+.pink-theme .homesecdiv #name, .pink-theme .skillsecdiv span,
+.pink-theme .sevicesecdiv span, .pink-theme .servicesecdiv span,
+.pink-theme .servicesecdiv i, .pink-theme .projectsecdiv span,
+.pink-theme .contactsecdiv span, .pink-theme .contactsecdiv i,
+.pink-theme .contactsecdiv a {
+    color: deeppink;
+}
+.pink-theme .nav #modeToggle {
+    box-shadow: 0px 0px 1px rgba(255,20,147,0.9);
+}
+.pink-theme .homesecdiv button, .pink-theme .aboutsecdiv button,
+.pink-theme .contactsecdiv button {
+    background-color: deeppink;
+    color: white;
+    border-color: deeppink;
+}
+.pink-theme .projectsecdiv #procontent,
+.pink-theme .projectsecdiv #procontent2,
+.pink-theme .projectsecdiv #procontent3,
+.pink-theme .projectsecdiv #procontent4 {
+    background: linear-gradient(rgba(0,0,0,0.4), deeppink);
+}
+.pink-theme .projectdiv {
+    background-color: deeppink;
+}
+.pink-theme .nav #modeToggle:hover {
+    background-color: deeppink;
+    color: white;
+}
+.pink-theme .homesecdiv button:hover,
+.pink-theme .aboutsecdiv button:hover,
+.pink-theme .contactsecdiv button:hover {
+    color: deeppink;
+    background-color: transparent;
+}
+.pink-theme .nav a:hover, .pink-theme .homesecdiv i:hover,
+.pink-theme .aboutsecdiv span, .pink-theme .aboutsecdiv a {
+    color: deeppink;
+}
+.pink-theme .contactsecdiv form input:hover {
+    border-color: deeppink;
+}
+.pink-theme .contactsecdiv form input:hover::placeholder {
+    color: deeppink;
+}
+.pink-theme .contactsecdiv .con{
+    color:black;
+}
+
+
+/* Sky Blue Theme */
+.skyblue-theme .nav .headdiv, .skyblue-theme .nav #modeToggle,
+.skyblue-theme .homesecdiv #name, .skyblue-theme .skillsecdiv span,
+.skyblue-theme .sevicesecdiv span, .skyblue-theme .servicesecdiv span,
+.skyblue-theme .servicesecdiv i, .skyblue-theme .projectsecdiv span,
+.skyblue-theme .contactsecdiv span, .skyblue-theme .contactsecdiv i,
+.skyblue-theme .contactsecdiv a {
+    color: dodgerblue;
+}
+.skyblue-theme .nav #modeToggle {
+    box-shadow: 0px 0px 1px rgba(30,144,255,0.9);
+}
+.skyblue-theme .homesecdiv button, .skyblue-theme .aboutsecdiv button,
+.skyblue-theme .contactsecdiv button {
+    background-color: dodgerblue;
+    color: white;
+    border-color: dodgerblue;
+}
+.skyblue-theme .projectsecdiv #procontent,
+.skyblue-theme .projectsecdiv #procontent2,
+.skyblue-theme .projectsecdiv #procontent3,
+.skyblue-theme .projectsecdiv #procontent4 {
+    background: linear-gradient(rgba(0,0,0,0.4), dodgerblue);
+}
+.skyblue-theme .projectdiv {
+    background-color: dodgerblue;
+}
+.skyblue-theme .nav #modeToggle:hover {
+    background-color: dodgerblue;
+    color: white;
+}
+.skyblue-theme .homesecdiv button:hover,
+.skyblue-theme .aboutsecdiv button:hover,
+.skyblue-theme .contactsecdiv button:hover {
+    color: dodgerblue;
+    background-color: transparent;
+}
+.skyblue-theme .nav a:hover, .skyblue-theme .homesecdiv i:hover,
+.skyblue-theme .aboutsecdiv span, .skyblue-theme .aboutsecdiv a {
+    color: dodgerblue;
+}
+.skyblue-theme .contactsecdiv form input:hover {
+    border-color: dodgerblue;
+}
+.skyblue-theme .contactsecdiv form input:hover::placeholder {
+    color: dodgerblue;
+}
+.skyblue-theme .contactsecdiv .con{
+    color:black;
+}
+
+
+
+/* Dark mode */
+body.dark-mode{
+    background-color:rgb(40,40,40);
+}
+body.dark-mode #about,body.dark-mode #skill,body.dark-mode #service,
+body.dark-mode #project,body.dark-mode #contact{
+    color:rgb(40,40,40);
+}
+body.dark-mode .nav,body.dark-mode .nav #modeToggles{
+    background-color:rgb(40,40,40);
+}
+body.dark-mode .homesecdiv{
+    background-color:rgb(40,40,40);
+}
+body.dark-mode .homesecdiv h1{
+    color:whitesmoke;
+}
+body.dark-mode .homesecdiv a{
+    color:darkgray;
+}
+body.dark-mode .homesecdiv .backgroundimg{
+    filter:brightness(15.5%);
+}
+body.dark-mode .nav a,body.dark-mode .nav span,
+body.dark-mode .aboutsecdiv,body.dark-mode .sections,
+body.dark-mode .skillsecdiv{
+    color:whitesmoke;
+}
+body.dark-mode .nav a:hover{
+    box-shadow:0px 0px 1px 1px rgba(255,255,255,0.6);
+}
+body.dark-mode .nav #modeToggle:hover{
+    color:rgb(40,40,40);
+}
+body.dark-mode .nav #modeToggles{
+    color:whitesmoke;
+    box-shadow:0px 0px 1px rgba(255,255,255,0.9);
+}
+body.dark-mode .nav #modeToggles:hover{
+    color:gold;
+    background-color:whitesmoke;
+}
+body.dark-mode .skillsecdiv .skill{
+    box-shadow:0px 0px 1px rgba(255,255,255,0.9);
+}
+body.dark-mode .aboutsecdiv img{
+    box-shadow:0px 0px 1px rgba(255,255,255,0.9);
+}
+body.dark-mode .skillsecdiv .skill div{
+    background-color:rgb(60,60,60);
+}
+body.dark-mode .servicesecdiv .servicediv{
+    color:whitesmoke;
+    box-shadow:0px 0px 1px rgba(255,255,255,0.9);
+    background:linear-gradient(135deg,rgb(70,70,70),rgb(40,40,40));
+}
+body.dark-mode .projectsecdiv .projectdiv{
+    box-shadow:0px 0px 1px rgba(255,255,255,0.9);
+}
+body.dark-mode .contactsecdiv{
+    color:whitesmoke;
+}
+body.dark-mode .contactsecdiv form input{
+    color:whitesmoke;
+    background-color:transparent;
+}
+body.dark-mode .contactsecdiv .con{
+    color:whitesmoke;
+}
+body.dark-mode .bottombardiv{
+    background-color:whitesmoke;
+    color:black;
+}
+body.dark-mode .bottombardiv i{
+    color:black;
+}
+
+
+@media(max-width:900px){
+    .aboutcontentdiv{
+        flex-wrap:wrap;
+    }
 }
