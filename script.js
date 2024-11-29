@@ -131,7 +131,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     const body = document.body;
     
     // Load the initial mode from localStorage if available
-    if (localStorage.getItem('mode') === 'dark') {
+    if (localStorage.getItem('modes') === 'dark') {
       body.classList.add('dark-mode');
       modeToggles.innerHTML = '<i class="fas fa-sun"></i>';
     }
@@ -142,10 +142,22 @@ document.addEventListener('DOMContentLoaded', (event) => {
       
       if (body.classList.contains('dark-mode')) {
         modeToggles.innerHTML = '<i class="fas fa-sun"></i>';
-        localStorage.setItem('mode', 'dark');
+        localStorage.setItem('modes', 'dark');
       } else {
         modeToggles.innerHTML = '<i class="fas fa-moon"></i>';
-        localStorage.setItem('mode', 'light');
+        localStorage.setItem('modes', 'light');
       }
     });
+  });
+  document.addEventListener("DOMContentLoaded",function(){
+    togglediv2=document.getElementById("togglediv2");
+    optionsdiv=document.getElementById("optionsdiv");
+    togglediv2.onclick=function(){
+        if(optionsdiv.style.display=="block"){
+            optionsdiv.style.display="none";
+        }
+        else{
+            optionsdiv.style.display="block";
+        }
+    }
   });

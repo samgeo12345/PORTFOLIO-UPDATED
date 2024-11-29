@@ -28,6 +28,9 @@ body{
     justify-content:right;
     margin-right:2%;
 }
+.nav #togglediv2{
+    display:none;
+}
 .nav .togglediv #modeToggle,#modeToggles{
     padding:1.5% 2%;
     margin-left:1.5%;
@@ -54,6 +57,7 @@ body{
 .nav .optionsdiv a{
     text-decoration:none;
     padding:3%;
+    display:flex;
     width:100%;
     font-weight:bold;
     color:black;
@@ -390,6 +394,10 @@ body{
 .contactdiv #successmsg{
     font-family:'Poppins',Verdana;
 }
+.bhr{
+    width:50%;
+    margin-left:0;
+}
 .bottombardiv{
     text-align:center;
     padding:0.5%;
@@ -621,45 +629,45 @@ body{
 .orange-theme .servicesecdiv i, .orange-theme .projectsecdiv span,
 .orange-theme .contactsecdiv span, .orange-theme .contactsecdiv i,
 .orange-theme .contactsecdiv a {
-    color: orange;
+    color:#fa5b0f;
 }
 .orange-theme .nav #modeToggle {
-    box-shadow: 0px 0px 1px rgba(255,165,0,0.9);
+    box-shadow: 0px 0px 1px rgba(255,140,0,0.9);
 }
 .orange-theme .homesecdiv button, .orange-theme .aboutsecdiv button,
 .orange-theme .contactsecdiv button {
-    background-color: orange;
+    background-color: #fa5b0f;
     color: white;
-    border-color: orange;
+    border-color: #fa5b0f;
 }
 .orange-theme .projectsecdiv #procontent,
 .orange-theme .projectsecdiv #procontent2,
 .orange-theme .projectsecdiv #procontent3,
 .orange-theme .projectsecdiv #procontent4 {
-    background: linear-gradient(rgba(0,0,0,0.4), orange);
+    background: linear-gradient(rgba(0,0,0,0.4), #fa5b0f);
 }
 .orange-theme .projectdiv {
-    background-color: orange;
+    background-color: #fa5b0f;
 }
 .orange-theme .nav #modeToggle:hover {
-    background-color: orange;
+    background-color: #fa5b0f;
     color: white;
 }
 .orange-theme .homesecdiv button:hover,
 .orange-theme .aboutsecdiv button:hover,
 .orange-theme .contactsecdiv button:hover {
-    color: orange;
+    color: #fa5b0f;
     background-color: transparent;
 }
 .orange-theme .nav a:hover, .orange-theme .homesecdiv i:hover,
 .orange-theme .aboutsecdiv span, .orange-theme .aboutsecdiv a {
-    color: orange;
+    color: #fa5b0f;
 }
 .orange-theme .contactsecdiv form input:hover {
-    border-color: orange;
+    border-color: #fa5b0f;
 }
 .orange-theme .contactsecdiv form input:hover::placeholder {
-    color: orange;
+    color: #fa5b0f;
 }
 .orange-theme .contactsecdiv .con{
     color:black;
@@ -791,6 +799,50 @@ body.dark-mode .homesecdiv h1{
 body.dark-mode .homesecdiv a{
     color:darkgray;
 }
+body.dark-mode .homesecdiv button,body.dark-mode .aboutsecdiv button,
+body.dark-mode .contactsecdiv form button{
+    color:black;
+}
+body.dark-mode .homesecdiv button:hover,
+body.dark-mode .aboutsecdiv button:hover,
+body.dark-mode .contactsecdiv form button:hover{
+    color:blue;
+}
+body.dark-mode.red-theme .homesecdiv button:hover,
+body.dark-mode.red-theme .aboutsecdiv button:hover,
+body.dark-mode.red-theme .contactsecdiv form button:hover{
+    color:red;
+}
+body.dark-mode.violet-theme .homesecdiv button:hover,
+body.dark-mode.violet-theme .aboutsecdiv button:hover,
+body.dark-mode.violet-theme .contactsecdiv form button:hover {
+    color: darkviolet;
+}
+body.dark-mode.green-theme .homesecdiv button:hover,
+body.dark-mode.green-theme .aboutsecdiv button:hover,
+body.dark-mode.green-theme .contactsecdiv form button:hover {
+    color: limegreen;
+}
+body.dark-mode.yellow-theme .homesecdiv button:hover,
+body.dark-mode.yellow-theme .aboutsecdiv button:hover,
+body.dark-mode.yellow-theme .contactsecdiv form button:hover {
+    color: gold;
+}
+body.dark-mode.orange-theme .homesecdiv button:hover,
+body.dark-mode.orange-theme .aboutsecdiv button:hover,
+body.dark-mode.orange-theme .contactsecdiv form button:hover {
+    color: orange;
+}
+body.dark-mode.pink-theme .homesecdiv button:hover,
+body.dark-mode.pink-theme .aboutsecdiv button:hover,
+body.dark-mode.pink-theme .contactsecdiv form button:hover {
+    color: deeppink;
+}
+body.dark-mode.skyblue-theme .homesecdiv button:hover,
+body.dark-mode.skyblue-theme .aboutsecdiv button:hover,
+body.dark-mode.skyblue-theme .contactsecdiv form button:hover {
+    color: dodgerblue;
+}
 body.dark-mode .homesecdiv .backgroundimg{
     filter:brightness(15.5%);
 }
@@ -850,7 +902,176 @@ body.dark-mode .bottombardiv i{
 
 
 @media(max-width:900px){
+    .aboutsecdiv{
+        margin:0;
+    }
+    .homesecdiv .photoimg{
+        right:4%;
+    }
+    .nav .togglediv{
+        gap:2%;
+    }
+    .nav #modeToggle,.nav #modeToggles{
+        box-shadow:none;
+    }
+}
+@media(max-width:800px){
     .aboutcontentdiv{
         flex-wrap:wrap;
+    }
+    .homesecdiv .photoimg{
+        block-size:300px;
+    }
+    .aboutsecdiv img{
+        margin-left:0;
+    }
+    .aboutsecdiv{
+        text-align:center;
+    }
+    .servicesecdiv{
+        padding:0;
+        margin:0;     
+    }
+}
+@media(max-width:750px){
+    .nav .optionsdiv{
+        display:none;
+    }
+    .photoimg{
+        margin-right:0;
+    }
+    .homesecdiv .photoimg{
+        display:none;
+    }
+    .nav .togglediv{
+        gap:20px;
+    }
+    .nav #togglediv2{
+        display:block;
+        margin-right:6%;
+        font-size:x-large;
+    }
+    .nav .optionsdiv{
+        display:none;
+        position:absolute;
+        top:100%;
+        right:0;
+        font-size:larger;
+        background-color:white;
+        width:50%;
+        padding:6%;
+        border-bottom-left-radius:15px;
+        box-shadow:0px 0px 5px rgba(0,0,0,0.3);
+    }
+    body.dark-mode .nav .optionsdiv{
+        background-color:rgb(40,40,40);
+        box-shadow:0px 0px 1px rgba(255,255,255,0.9);
+    }
+    body.dark-mode .nav .togglediv #togglediv2{
+        color:whitesmoke;
+    }
+    body.dark-mode .nav #modeToggle,
+    body.dark-mode .nav #modeToggles{
+        box-shadow:none;
+    }
+    .nav .optionsdiv a{
+        padding:5%;
+        justify-content:center;
+    }
+}
+@media(max-width:700px){
+    .skills,.servicecontentsdiv,
+    .projectcontentsdiv,.contactcontentsdiv{
+        flex-wrap:wrap;
+    }
+    .skill{
+        width:100%;
+        text-align:left;
+        padding-top:3.5%;
+        padding-bottom:3.5%;
+    }
+    .skillsecdiv{
+        text-align:center;
+    }
+    .servicediv{
+        width:100%;
+    }
+    #contactdiv{
+        margin-top:18%;
+    }
+    .bhr{
+        width:100%;
+    }
+    .contactdiv,.contactdiv table,.contactdiv hr{
+        text-align:center;
+        margin:auto;
+    }
+    .contactdiv table td{
+        text-align:left;
+    }
+}
+@media(max-width:600px){
+    .skill{
+        margin-top:2%;
+    }
+    .aboutsecdiv{
+        margin-top:25%;
+    }
+    .homesecdiv{
+        margin-top:25%;
+    }
+}
+@media(max-width:570px){
+    .aboutsecdiv{
+        margin-top:30%;
+    }
+    .homesecdiv{
+        margin-top:25%;
+    }
+}
+@media(max-width:550px){
+    .aboutsecdiv{
+        margin-top:35%;
+    }
+    .homesecdiv{
+        margin-top:30%;
+    }
+}
+@media(max-width:500px){
+    .aboutsecdiv{
+        margin-top:40%;
+    }
+    .homesecdiv{
+        margin-top:35%;
+    }
+}
+@media(max-width:450px){
+    .aboutsecdiv{
+        margin-top:50%;
+    }
+    .homesecdiv{
+        margin-top:40%;
+    }
+}
+@media(max-width:400px){
+    .skill{
+        font-size:smaller;
+    }
+    .skill i{
+        font-size:20px;
+    }
+    .aboutsecdiv{
+        margin-top:55%;
+    }
+    .homesecdiv{
+        margin-top:45%;
+    }
+}
+@media(max-width:370px){
+    .aboutsecdiv{
+        margin-top:60%;
+    }
+    .homesecdiv{
+        margin-top:50%;
     }
 }

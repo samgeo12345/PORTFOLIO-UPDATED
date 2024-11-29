@@ -8,9 +8,9 @@
     <script src="https://kit.fontawesome.com/76f5d35c55.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="nav">
+    <div class="nav" id="home">
         <div class="headdiv"><h2>sam<span>geo'</span></h2></div>
-        <div class="optionsdiv">
+        <div id="optionsdiv" class="optionsdiv">
             <a href="#home">Home</a>
             <a href="#about">About</a>
             <a href="#skill">Skill</a>
@@ -18,9 +18,9 @@
             <a href="#project">Project</a>
             <a href="#contact">Contact</a>
         </div>
-        <div class="togglediv"><i id="modeToggle" class="fas fa-brush"></i><a href="#" id="modeToggles"><i class="fas fa-moon"></i></a></div>
+        <div class="togglediv"><i id="modeToggle" class="fas fa-brush"></i><a id="modeToggles"><i class="fas fa-moon"></i></a><i id="togglediv2" class="fas fa-bars"></i></div>
     </div>
-    <div class="maindiv" id="home">
+    <div class="maindiv">
         <div class="homesecdiv">
             <img class="backgroundimg" src="img/wp12621393-cool-white-computer-wallpapers.jpg" alt="">
             <div>
@@ -87,7 +87,7 @@
                     <div><i class="fas fa-palette"></i><p class="sp">Artistic</p><p>Creating detailed and imaginative drawings tailored to your vision, combining creativity with precision for a captivating artistic experience.</p></div>
                 </div>
                 <div class="servicediv">
-                    <div><i class="fas fa-gear"></i><p class="sp">Technical Support</p><p>Providing guidance and troubleshooting for basic web development or programming challenges.</p></div>
+                    <div><i class="fas fa-gear"></i><p class="sp">Technical Support</p><p>Delivering reliable and efficient technical support to resolve issues swiftly, optimize system performance, and ensure seamless operation.</p></div>
                 </div> 
             </div>
         </div>
@@ -143,10 +143,10 @@
                             <td><i class="fas fa-phone"></i></td>
                             <td class="td"><span class="con">Phone</span><br>+91 9566033767</td>
                         </tr>
-                    </table><hr style="width:50%;margin-left:0;"><br>
+                    </table><hr class="bhr"><br>
                     <a href="https://www.linkedin.com/in/samuel-george-j004"><i class="fas fa-link"></i> Let's Connect ></a>
                 </div>
-                <div class="contactdiv" style="text-align:center;">
+                <div id="contactdiv" class="contactdiv" style="text-align:center;">
                     <h2>Get in Touch</h2>
                     <form name="submit-to-google-sheet">
                         <input type="text" name="Name" placeholder="Name" required>
