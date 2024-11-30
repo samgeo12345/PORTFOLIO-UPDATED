@@ -942,6 +942,17 @@ body.dark-mode .bottombardiv i{
     #servicecontentsdiv{
         margin-top:5%;
     }
+    #prodiv3{
+        margin-top:5%;
+    }
+    .projectsecdiv .pro{
+        font-size:small;
+    }
+}
+@media(max-width:850px){
+    .pro div,.pro2 div,.pro3 div,.pro4 div{
+        font-size:small;
+    }
 }
 @media(max-width:750px){
     .nav .optionsdiv{
@@ -973,6 +984,9 @@ body.dark-mode .bottombardiv i{
         border-bottom-left-radius:15px;
         box-shadow:-5px 5px 5px rgba(0,0,0,0.3);
     }
+    .nav #optionsdiv a{
+        border-radius:30px;
+    }
     body.dark-mode .nav .optionsdiv{
         background:linear-gradient(225deg,rgb(40,40,40),rgb(30,30,30));
         box-shadow:-5px 5px 5px rgba(0,0,0,0.3);
@@ -990,6 +1004,9 @@ body.dark-mode .bottombardiv i{
     .nav .optionsdiv a{
         padding:5%;
         justify-content:center;
+    }
+    .pro div,.pro2 div,.pro3 div,.pro4 div{
+        margin-top:4.5%;
     }
 }
 @media(max-width:700px){
@@ -1022,6 +1039,10 @@ body.dark-mode .bottombardiv i{
     .contactdiv table td{
         text-align:left;
     }
+    .pro div,.pro2 div,.pro3 div,.pro4 div{
+        font-size:larger;
+        margin-top:12%;
+    }
 }
 @media(max-width:600px){
     .skill{
@@ -1049,6 +1070,10 @@ body.dark-mode .bottombardiv i{
     .homesecdiv{
         margin-top:10%;
     }
+    .pro div,.pro2 div,.pro3 div,.pro4 div{
+        font-size:15px;
+        margin-top:12%;
+    }
 }
 @media(max-width:500px){
     #about{
@@ -1068,6 +1093,9 @@ body.dark-mode .bottombardiv i{
     .homesecdiv{
         margin-top:10%;
     }
+    .pro div,.pro2 div,.pro3 div,.pro4 div{
+        margin-top:8%;
+    }
 }
 @media(max-width:400px){
     .skill{
@@ -1082,6 +1110,9 @@ body.dark-mode .bottombardiv i{
     .homesecdiv{
         margin-top:10%;
     }
+    .pro div,.pro2 div,.pro3 div,.pro4 div{
+        font-size:13px;
+    }
 }
 @media(max-width:370px){
     #about{
@@ -1089,5 +1120,8 @@ body.dark-mode .bottombardiv i{
     }
     .homesecdiv{
         margin-top:10%;
+    }
+    .pro div,.pro2 div,.pro3 div,.pro4 div{
+        font-size:13px;
     }
 }
