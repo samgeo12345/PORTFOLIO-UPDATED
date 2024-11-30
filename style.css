@@ -49,7 +49,7 @@ body{
     color:blue;
     box-shadow:0px 0px 1px rgba(0,0,255,0.9);
 }
-.nav .headdiv span{
+.nav .headdiv span,.nav .optionsdiv span{
     color:black;
 }
 .nav .headdiv{
@@ -82,6 +82,22 @@ body{
     color:white;
     background-color:black;
     box-shadow:0px 0px 2px rgba(0,0,0,0.9);
+}
+.nav .socialdiv{
+    display:flex;
+    justify-content:center;
+    width:70%;
+    margin:auto;
+}
+.nav .optionsdiv h3{
+    color:blue;
+}
+.nav .socialdiv i{
+    font-size:x-large;
+    color:dimgray;
+}
+.nav #optionsdiv p{
+    margin-top:18%;
 }
 .homesecdiv #name{
     color:blue;
@@ -425,7 +441,7 @@ body{
 .red-theme .sevicesecdiv span,.red-theme .servicesecdiv span,
 .red-theme .servicesecdiv i,.red-theme .projectsecdiv span,
 .red-theme .contactsecdiv span,.red-theme .contactsecdiv i,
-.red-theme .contactsecdiv a{
+.red-theme .contactsecdiv a,.red-theme .nav .optionsdiv h3{
     color:red;
 }
 .red-theme .nav #modeToggle{
@@ -477,7 +493,7 @@ body{
 .violet-theme .sevicesecdiv span,.violet-theme .servicesecdiv span,
 .violet-theme .servicesecdiv i,.violet-theme .projectsecdiv span,
 .violet-theme .contactsecdiv span,.violet-theme .contactsecdiv i,
-.violet-theme .contactsecdiv a{
+.violet-theme .contactsecdiv a,.violet-theme .nav .optionsdiv h3{
     color:darkviolet;
 }
 .violet-theme .nav #modeToggle{
@@ -529,7 +545,7 @@ body{
 .green-theme .sevicesecdiv span, .green-theme .servicesecdiv span,
 .green-theme .servicesecdiv i, .green-theme .projectsecdiv span,
 .green-theme .contactsecdiv span, .green-theme .contactsecdiv i,
-.green-theme .contactsecdiv a {
+.green-theme .contactsecdiv a,.green-theme .nav .optionsdiv h3{
     color: limegreen;
 }
 .green-theme .nav #modeToggle {
@@ -580,7 +596,7 @@ body{
 .yellow-theme .sevicesecdiv span, .yellow-theme .servicesecdiv span,
 .yellow-theme .servicesecdiv i, .yellow-theme .projectsecdiv span,
 .yellow-theme .contactsecdiv span, .yellow-theme .contactsecdiv i,
-.yellow-theme .contactsecdiv a {
+.yellow-theme .contactsecdiv a,.yellow-theme .nav .optionsdiv h3{
     color: gold;
 }
 .yellow-theme .nav #modeToggle {
@@ -631,7 +647,7 @@ body{
 .orange-theme .sevicesecdiv span, .orange-theme .servicesecdiv span,
 .orange-theme .servicesecdiv i, .orange-theme .projectsecdiv span,
 .orange-theme .contactsecdiv span, .orange-theme .contactsecdiv i,
-.orange-theme .contactsecdiv a {
+.orange-theme .contactsecdiv a,.orange-theme .nav .optionsdiv h3{
     color:#fa5b0f;
 }
 .orange-theme .nav #modeToggle {
@@ -683,7 +699,7 @@ body{
 .pink-theme .sevicesecdiv span, .pink-theme .servicesecdiv span,
 .pink-theme .servicesecdiv i, .pink-theme .projectsecdiv span,
 .pink-theme .contactsecdiv span, .pink-theme .contactsecdiv i,
-.pink-theme .contactsecdiv a {
+.pink-theme .contactsecdiv a,.pink-theme .nav .optionsdiv h3{
     color: deeppink;
 }
 .pink-theme .nav #modeToggle {
@@ -735,7 +751,7 @@ body{
 .skyblue-theme .sevicesecdiv span, .skyblue-theme .servicesecdiv span,
 .skyblue-theme .servicesecdiv i, .skyblue-theme .projectsecdiv span,
 .skyblue-theme .contactsecdiv span, .skyblue-theme .contactsecdiv i,
-.skyblue-theme .contactsecdiv a {
+.skyblue-theme .contactsecdiv a,.skyblue-theme .nav .optionsdiv h3{
     color: dodgerblue;
 }
 .skyblue-theme .nav #modeToggle {
@@ -892,8 +908,11 @@ body.dark-mode .contactsecdiv form input{
     color:whitesmoke;
     background-color:transparent;
 }
-body.dark-mode .contactsecdiv .con{
+body.dark-mode .contactsecdiv .con,body.dark-mode .nav .optionsdiv p{
     color:whitesmoke;
+}
+body.dark-mode .nav .socialdiv i{
+    color:darkgray;
 }
 body.dark-mode .bottombardiv{
     background-color:whitesmoke;
@@ -958,6 +977,10 @@ body.dark-mode .bottombardiv i{
     .nav .optionsdiv{
         display:none;
     }
+    .nav .socialdiv,.nav .optionsdiv hr,.nav .optionsdiv h3,
+    .nav .optionsdiv p{
+        display:none;
+    }
     .photoimg{
         margin-right:0;
     }
@@ -977,15 +1000,13 @@ body.dark-mode .bottombardiv i{
         position:absolute;
         top:100%;
         right:0;
+        height:100vh;
         font-size:larger;
         background:linear-gradient(225deg,white,whitesmoke);
         width:50%;
-        padding:6%;
+        padding:6% 0%;
         border-bottom-left-radius:15px;
         box-shadow:-5px 5px 5px rgba(0,0,0,0.3);
-    }
-    .nav #optionsdiv a{
-        border-radius:30px;
     }
     body.dark-mode .nav .optionsdiv{
         background:linear-gradient(225deg,rgb(40,40,40),rgb(30,30,30));
@@ -1002,7 +1023,7 @@ body.dark-mode .bottombardiv i{
         box-shadow:none;
     }
     .nav .optionsdiv a{
-        padding:5%;
+        padding:8% 5%;
         justify-content:center;
     }
     .pro div,.pro2 div,.pro3 div,.pro4 div{
@@ -1112,5 +1133,12 @@ body.dark-mode .bottombardiv i{
     }
     .pro div,.pro2 div,.pro3 div,.pro4 div{
         font-size:13px;
+    }
+    .nav .socialdiv,.nav .optionsdiv hr,.nav .optionsdiv h3{
+        display:flex;
+        justify-content:center;
+    }
+    .nav .optionsdiv p{
+        display:block;
     }
 }
