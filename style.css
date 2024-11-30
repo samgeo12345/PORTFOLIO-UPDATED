@@ -1065,7 +1065,7 @@ body.dark-mode .bottombardiv i{
 }
 @media(max-width:550px){
     #about{
-        margin-top:35%;
+        margin-top:30%;
     }
     .homesecdiv{
         margin-top:10%;
@@ -1077,7 +1077,7 @@ body.dark-mode .bottombardiv i{
 }
 @media(max-width:500px){
     #about{
-        margin-top:40%;
+        margin-top:30%;
     }
     .homesecdiv{
         margin-top:10%;
@@ -1088,7 +1088,7 @@ body.dark-mode .bottombardiv i{
 }
 @media(max-width:450px){
     #about{
-        margin-top:50%;
+        margin-top:30%;
     }
     .homesecdiv{
         margin-top:10%;
@@ -1105,7 +1105,7 @@ body.dark-mode .bottombardiv i{
         font-size:20px;
     }
     #about{
-        margin-top:55%;
+        margin-top:30%;
     }
     .homesecdiv{
         margin-top:10%;
@@ -1116,7 +1116,7 @@ body.dark-mode .bottombardiv i{
 }
 @media(max-width:370px){
     #about{
-        margin-top:60%;
+        margin-top:30%;
     }
     .homesecdiv{
         margin-top:10%;
