@@ -914,7 +914,11 @@ body.dark-mode .bottombardiv i{
     .nav .togglediv{
         gap:2%;
     }
-    .nav #modeToggle,.nav #modeToggles{
+    .nav .togglediv #modeToggle,.nav #modeToggles,
+    .yellow-theme .nav #modeToggle,.red-theme .nav #modeToggle,
+    .violet-theme .nav #modeToggle,.green-theme .nav #modeToggle,
+    .orange-theme .nav #modeToggle,.skyblue-theme .nav #modeToggle,
+    .pink-theme .nav #modeToggle{
         box-shadow:none;
     }
 }
