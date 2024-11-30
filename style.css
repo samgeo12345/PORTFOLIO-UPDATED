@@ -1048,25 +1048,19 @@ body.dark-mode .bottombardiv i{
     .skill{
         margin-top:2%;
     }
-    #about{
-        margin-top:25%;
-    }
+    
     .homesecdiv{
         margin-top:10%;
     }
 }
 @media(max-width:570px){
-    #about{
-        margin-top:30%;
-    }
+   
     .homesecdiv{
         margin-top:10%;
     }
 }
 @media(max-width:550px){
-    #about{
-        margin-top:30%;
-    }
+   
     .homesecdiv{
         margin-top:10%;
     }
@@ -1076,9 +1070,7 @@ body.dark-mode .bottombardiv i{
     }
 }
 @media(max-width:500px){
-    #about{
-        margin-top:30%;
-    }
+    
     .homesecdiv{
         margin-top:10%;
     }
@@ -1090,9 +1082,7 @@ body.dark-mode .bottombardiv i{
     }
 }
 @media(max-width:450px){
-    #about{
-        margin-top:30%;
-    }
+   
     .homesecdiv{
         margin-top:10%;
     }
@@ -1107,9 +1097,7 @@ body.dark-mode .bottombardiv i{
     .skill i{
         font-size:20px;
     }
-    #about{
-        margin-top:30%;
-    }
+    
     .homesecdiv{
         margin-top:10%;
     }
@@ -1118,9 +1106,7 @@ body.dark-mode .bottombardiv i{
     }
 }
 @media(max-width:370px){
-    #about{
-        margin-top:30%;
-    }
+   
     .homesecdiv{
         margin-top:10%;
     }
