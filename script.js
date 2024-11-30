@@ -155,9 +155,11 @@ document.addEventListener('DOMContentLoaded', (event) => {
     togglediv2.onclick=function(){
         if(optionsdiv.style.display=="block"){
             optionsdiv.style.display="none";
+            togglediv2.innerHTML='<i class="fa-solid fa-bars"></i>';
         }
         else{
             optionsdiv.style.display="block";
+            togglediv2.innerHTML='<i class="fa-solid fa-xmark"></i>';
         }
     }
   });
