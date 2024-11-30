@@ -967,7 +967,7 @@ body.dark-mode .bottombardiv i{
         top:100%;
         right:0;
         font-size:larger;
-        background-color:white;
+        background:linear-gradient(225deg,white,whitesmoke);
         width:50%;
         padding:6%;
         border-bottom-left-radius:15px;
