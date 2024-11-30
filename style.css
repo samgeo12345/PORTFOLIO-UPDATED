@@ -96,6 +96,10 @@ body{
     font-size:x-large;
     color:dimgray;
 }
+.nav .socialdiv,.nav .optionsdiv hr,.nav .optionsdiv h3,
+.nav .optionsdiv p{
+        display:none;
+}
 .nav #optionsdiv p{
     margin-top:18%;
 }
@@ -975,10 +979,6 @@ body.dark-mode .bottombardiv i{
 }
 @media(max-width:750px){
     .nav .optionsdiv{
-        display:none;
-    }
-    .nav .socialdiv,.nav .optionsdiv hr,.nav .optionsdiv h3,
-    .nav .optionsdiv p{
         display:none;
     }
     .photoimg{
