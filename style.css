@@ -980,8 +980,11 @@ body.dark-mode .bottombardiv i{
     body.dark-mode .nav .togglediv #togglediv2{
         color:whitesmoke;
     }
-    body.dark-mode .nav #modeToggle,
-    body.dark-mode .nav #modeToggles{
+    body.dark-mode .nav .togglediv #modeToggle,
+    body.dark-mode .nav .togglediv #modeToggles,
+    body.dark-mode .nav .togglediv #modeToggle:hover,
+    body.dark-mode .nav .togglediv #modeToggles:hover,
+    body.dark-mode .nav .togglediv #togglediv2:hover{
         box-shadow:none;
     }
     .nav .optionsdiv a{
