@@ -931,6 +931,9 @@ body.dark-mode .bottombardiv i{
     .aboutsecdiv{
         margin:0;
     }
+    .pro,.pro2,.pro3,.pro4{
+        font-size:small;
+    }
     .homesecdiv .photoimg{
         right:4%;
     }
@@ -962,13 +965,7 @@ body.dark-mode .bottombardiv i{
         padding:0;
         margin:0;     
     }
-    #servicecontentsdiv{
-        margin-top:5%;
-    }
-    #prodiv3{
-        margin-top:5%;
-    }
-    .projectsecdiv .pro{
+    .pro,.pro2,.pro3,.pro4{
         font-size:small;
     }
 }
@@ -1034,6 +1031,12 @@ body.dark-mode .bottombardiv i{
     .skills,.servicecontentsdiv,
     .projectcontentsdiv,.contactcontentsdiv{
         flex-wrap:wrap;
+    }
+    #servicecontentsdiv{
+        margin-top:5%;
+    }
+    #prodiv3{
+        margin-top:5%;
     }
     .skill{
         width:100%;
