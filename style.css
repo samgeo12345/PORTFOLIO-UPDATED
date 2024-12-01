@@ -187,6 +187,48 @@ body{
     text-decoration:none;
     color:blue;
 }
+.scontentdiv{
+    position:relative;
+    overflow:hidden;
+}
+.detailcontents{
+    position:absolute;
+    background-color:whitesmoke;
+    width:100%;
+    left:100%;
+    overflow:hidden;
+    top:0;
+    text-align:left;
+    height:80%;
+    box-shadow:inset 0px 0px 1px rgba(0,0,0,0.9);
+    transition:.4s ease-in-out;
+}
+.scrollcontents{
+    overflow-y:auto;
+    height:100%;
+}
+.detailcontents .scrollcontents div{
+    padding:4%;
+    width:70%;
+    overflow:hidden;
+    background-color:white;
+    font-family:'Poppins',Verdana;
+    border-radius:10px;
+    margin-top:4%;
+    box-shadow:0px 0px 5px rgba(0,0,0,0.3);
+}
+.detailcontents .scrollcontents div img{
+    width:100%;
+    margin:0;
+    height:50%;
+}
+.detailcontents .scrollcontents div span{
+    font-weight:bold;
+}
+.detailcontents .scrollcontents div i{
+    font-size:x-large;
+    color:blue;
+}
 .aboutcontentdiv button{
     padding:3% 10%;
     border-radius:8px;
@@ -445,7 +487,8 @@ body{
 .red-theme .sevicesecdiv span,.red-theme .servicesecdiv span,
 .red-theme .servicesecdiv i,.red-theme .projectsecdiv span,
 .red-theme .contactsecdiv span,.red-theme .contactsecdiv i,
-.red-theme .contactsecdiv a,.red-theme .nav .optionsdiv h3{
+.red-theme .contactsecdiv a,.red-theme .nav .optionsdiv h3,
+.red-theme .detailcontents .scrollcontents div i{
     color:red;
 }
 .red-theme .nav #modeToggle{
@@ -486,7 +529,8 @@ body{
 .red-theme .contactsecdiv form input:hover::placeholder{
     color:red;
 }
-.red-theme .contactsecdiv .con{
+.red-theme .contactsecdiv .con,
+.red-theme .detailcontents .scrollcontents div span{
     color:black;
 }
 
@@ -497,7 +541,8 @@ body{
 .violet-theme .sevicesecdiv span,.violet-theme .servicesecdiv span,
 .violet-theme .servicesecdiv i,.violet-theme .projectsecdiv span,
 .violet-theme .contactsecdiv span,.violet-theme .contactsecdiv i,
-.violet-theme .contactsecdiv a,.violet-theme .nav .optionsdiv h3{
+.violet-theme .contactsecdiv a,.violet-theme .nav .optionsdiv h3,
+.violet-theme .detailcontents .scrollcontents div i{
     color:darkviolet;
 }
 .violet-theme .nav #modeToggle{
@@ -538,7 +583,8 @@ body{
 .violet-theme .contactsecdiv form input:hover::placeholder{
     color:darkviolet;
 }
-.violet-theme .contactsecdiv .con{
+.violet-theme .contactsecdiv .con,
+.violet-theme .detailcontents .scrollcontents div span{
     color:black;
 }
 
@@ -549,7 +595,8 @@ body{
 .green-theme .sevicesecdiv span, .green-theme .servicesecdiv span,
 .green-theme .servicesecdiv i, .green-theme .projectsecdiv span,
 .green-theme .contactsecdiv span, .green-theme .contactsecdiv i,
-.green-theme .contactsecdiv a,.green-theme .nav .optionsdiv h3{
+.green-theme .contactsecdiv a,.green-theme .nav .optionsdiv h3,
+.green-theme .detailcontents .scrollcontents div i{
     color: limegreen;
 }
 .green-theme .nav #modeToggle {
@@ -590,7 +637,8 @@ body{
 .green-theme .contactsecdiv form input:hover::placeholder {
     color: limegreen;
 }
-.green-theme .contactsecdiv .con{
+.green-theme .contactsecdiv .con,
+.green-theme .detailcontents .scrollcontents div span{
     color:black;
 }
 
@@ -600,7 +648,8 @@ body{
 .yellow-theme .sevicesecdiv span, .yellow-theme .servicesecdiv span,
 .yellow-theme .servicesecdiv i, .yellow-theme .projectsecdiv span,
 .yellow-theme .contactsecdiv span, .yellow-theme .contactsecdiv i,
-.yellow-theme .contactsecdiv a,.yellow-theme .nav .optionsdiv h3{
+.yellow-theme .contactsecdiv a,.yellow-theme .nav .optionsdiv h3,
+.yellow-theme .detailcontents .scrollcontents div i{
     color: gold;
 }
 .yellow-theme .nav #modeToggle {
@@ -641,7 +690,8 @@ body{
 .yellow-theme .contactsecdiv form input:hover::placeholder {
     color: gold;
 }
-.yellow-theme .contactsecdiv .con{
+.yellow-theme .contactsecdiv .con,
+.yellow-theme .detailcontents .scrollcontents div span{
     color:black;
 }
 
@@ -651,7 +701,8 @@ body{
 .orange-theme .sevicesecdiv span, .orange-theme .servicesecdiv span,
 .orange-theme .servicesecdiv i, .orange-theme .projectsecdiv span,
 .orange-theme .contactsecdiv span, .orange-theme .contactsecdiv i,
-.orange-theme .contactsecdiv a,.orange-theme .nav .optionsdiv h3{
+.orange-theme .contactsecdiv a,.orange-theme .nav .optionsdiv h3,
+.orange-theme .detailcontents .scrollcontents div i{
     color:#fa5b0f;
 }
 .orange-theme .nav #modeToggle {
@@ -692,7 +743,8 @@ body{
 .orange-theme .contactsecdiv form input:hover::placeholder {
     color: #fa5b0f;
 }
-.orange-theme .contactsecdiv .con{
+.orange-theme .contactsecdiv .con,
+.orange-theme .detailcontents .scrollcontents div span{
     color:black;
 }
 
@@ -703,7 +755,8 @@ body{
 .pink-theme .sevicesecdiv span, .pink-theme .servicesecdiv span,
 .pink-theme .servicesecdiv i, .pink-theme .projectsecdiv span,
 .pink-theme .contactsecdiv span, .pink-theme .contactsecdiv i,
-.pink-theme .contactsecdiv a,.pink-theme .nav .optionsdiv h3{
+.pink-theme .contactsecdiv a,.pink-theme .nav .optionsdiv h3,
+.pink-theme .detailcontents .scrollcontents div i{
     color: deeppink;
 }
 .pink-theme .nav #modeToggle {
@@ -744,7 +797,8 @@ body{
 .pink-theme .contactsecdiv form input:hover::placeholder {
     color: deeppink;
 }
-.pink-theme .contactsecdiv .con{
+.pink-theme .contactsecdiv .con,
+.pink-theme .detailcontents .scrollcontents div span{
     color:black;
 }
 
@@ -755,7 +809,8 @@ body{
 .skyblue-theme .sevicesecdiv span, .skyblue-theme .servicesecdiv span,
 .skyblue-theme .servicesecdiv i, .skyblue-theme .projectsecdiv span,
 .skyblue-theme .contactsecdiv span, .skyblue-theme .contactsecdiv i,
-.skyblue-theme .contactsecdiv a,.skyblue-theme .nav .optionsdiv h3{
+.skyblue-theme .contactsecdiv a,.skyblue-theme .nav .optionsdiv h3,
+.skyblue-theme .detailcontents .scrollcontents div i{
     color: dodgerblue;
 }
 .skyblue-theme .nav #modeToggle {
@@ -796,7 +851,8 @@ body{
 .skyblue-theme .contactsecdiv form input:hover::placeholder {
     color: dodgerblue;
 }
-.skyblue-theme .contactsecdiv .con{
+.skyblue-theme .contactsecdiv .con,
+.skyblue-theme .detailcontents .scrollcontents div span{
     color:black;
 }
 
@@ -810,13 +866,17 @@ body.dark-mode #about,body.dark-mode #skill,body.dark-mode #service,
 body.dark-mode #project,body.dark-mode #contact{
     color:rgb(40,40,40);
 }
+body.dark-mode .detailcontents{
+    background-color:rgb(40,40,40);
+}
 body.dark-mode .nav,body.dark-mode .nav #modeToggles{
     background-color:rgb(40,40,40);
 }
 body.dark-mode .homesecdiv{
     background-color:rgb(40,40,40);
 }
-body.dark-mode .homesecdiv h1{
+body.dark-mode .homesecdiv h1,
+body.dark-mode .detailcontents .scrollcontents div span{
     color:whitesmoke;
 }
 body.dark-mode .homesecdiv a{
@@ -897,10 +957,14 @@ body.dark-mode .aboutsecdiv img{
 body.dark-mode .skillsecdiv .skill div{
     background-color:rgb(60,60,60);
 }
-body.dark-mode .servicesecdiv .servicediv{
+body.dark-mode .servicesecdiv .servicediv,
+body.dark-mode .detailcontents .scrollcontents div{
     color:whitesmoke;
     box-shadow:0px 0px 1px rgba(255,255,255,0.9);
     background:linear-gradient(135deg,rgb(70,70,70),rgb(40,40,40));
+}
+body.dark-mode .detailcontents{
+    box-shadow:inset 0px 0px 1px rgba(255,255,255,0.9);
 }
 body.dark-mode .projectsecdiv .projectdiv{
     box-shadow:0px 0px 1px rgba(255,255,255,0.9);

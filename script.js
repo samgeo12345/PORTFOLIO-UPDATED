@@ -163,3 +163,18 @@ document.addEventListener('DOMContentLoaded', (event) => {
         }
     }
   });
+  document.addEventListener("DOMContentLoaded",function(){
+    morecontents=document.getElementById("morecontents");
+    detailcontents=document.getElementById("detailcontents");
+    cut=document.getElementById("cut");
+    morecontents.onclick=function(){
+        if(detailcontents.style.left="100%"){
+            detailcontents.style.left="0%";
+        }
+    }
+    cut.onclick=function(){
+        if(detailcontents.style.left="0%"){
+            detailcontents.style.left="100%";
+        }
+    }
+  });
