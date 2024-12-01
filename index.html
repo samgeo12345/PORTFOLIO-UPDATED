@@ -57,7 +57,7 @@
                         As a dedicated and ambitious Computer Science and Engineering student, I am passionate about harnessing technology to solve real-world problems. With a strong foundation in programming, algorithms, and software development.
                     </p>
                     <a href="">More ></a><br><br>
-                    <button onclick="window.open('https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&to=samgeoj12d@gmail.com&su=Hire%20Me&body=Hello,%20I%20am%20interested%20in%20hiring%20you.', '_blank')">Hire me</button>
+                    <button onclick="openGmailCompose()">Hire me</button>
                 </div>
             </div>
         </div>
@@ -180,6 +180,24 @@
             <p><i class="far fa-copyright"></i> Samuel George. All rights reserved.</p>
         </div>
     </div>
+    <script>
+        function openGmailCompose() {
+            const isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+            if (isMobile) {
+                // Fallback to mailto on mobile devices
+                location.href = 'mailto:samgeo12d@gmail.com?subject=Hire%20Me&body=Hello,%20I%20am%20interested%20in%20hiring%20you.';
+            } else {
+                // Open Gmail compose window in a new tab on desktops
+                window.open(
+                    'https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&to=samgeo12d@gmail.com&su=Hire%20Me&body=Hello,%20I%20am%20interested%20in%20hiring%20you.',
+                    '_blank'
+                );
+            }
+        }
+    </script>
+    
+    <button onclick="openGmailCompose()">Hire Me</button>
+    
     <script src="script.js"></script>
 </body>
 </html>
