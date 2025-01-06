@@ -1193,7 +1193,7 @@ body.dark-mode .bottombardiv i{
         font-size:13px;
     }
 }
-@media(max-width:768px){
+@media(max-width:380px){
    
     .homesecdiv{
         margin-top:10%;
