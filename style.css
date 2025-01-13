@@ -338,6 +338,12 @@ body{
     padding:4%;
     background:linear-gradient(135deg,whitesmoke,white);
     box-shadow:0px 0px 5px rgba(0,0,0,0.3);
+    transition:.3s ease-in-out;
+}
+.servicediv:hover{
+    color:blue;
+    box-shadow:0px 0px 5px 5px rgba(0,0,255,0.5);
+    background:linear-gradient(225deg,whitesmoke,white);
 }
 .servicediv i{
     font-size:x-large;
@@ -533,6 +539,11 @@ body{
 .red-theme .detailcontents .scrollcontents div span{
     color:black;
 }
+.red-theme .servicediv:hover{
+    color:red;
+    box-shadow:0px 0px 5px 5px rgba(255,0,0,0.5);
+}
+
 
 
 /* Violet Theme */
@@ -587,6 +598,11 @@ body{
 .violet-theme .detailcontents .scrollcontents div span{
     color:black;
 }
+.violet-theme .servicediv:hover{
+    color:darkviolet;
+    box-shadow:0px 0px 5px 5px rgba(148,0,211,0.5);
+}
+
 
 
 /* Green Theme */
@@ -641,6 +657,12 @@ body{
 .green-theme .detailcontents .scrollcontents div span{
     color:black;
 }
+.green-theme .servicediv:hover{
+    color:limegreen;
+    box-shadow:0px 0px 5px 5px rgba(50,205,50,0.5);
+} 
+
+
 
 /* Yellow Theme */
 .yellow-theme .nav .headdiv, .yellow-theme .nav #modeToggle,
@@ -694,6 +716,12 @@ body{
 .yellow-theme .detailcontents .scrollcontents div span{
     color:black;
 }
+.yellow-theme .servicediv:hover{
+    color:gold;
+    box-shadow:0px 0px 5px 5px rgba(255,215,0,0.5);
+} 
+
+
 
 /* Orange Theme */
 .orange-theme .nav .headdiv, .orange-theme .nav #modeToggle,
@@ -747,6 +775,11 @@ body{
 .orange-theme .detailcontents .scrollcontents div span{
     color:black;
 }
+.orange-theme .servicediv:hover{
+    color:#fa5b0f;
+    box-shadow:0px 0px 5px 5px rgba(250,91,15,0.5);
+} 
+
 
 
 /* Pink Theme */
@@ -801,6 +834,11 @@ body{
 .pink-theme .detailcontents .scrollcontents div span{
     color:black;
 }
+.pink-theme .servicediv:hover{
+    color:deeppink;
+    box-shadow:0px 0px 5px 5px rgba(255,20,147,0.5);
+}
+
 
 
 /* Sky Blue Theme */
@@ -854,6 +892,10 @@ body{
 .skyblue-theme .contactsecdiv .con,
 .skyblue-theme .detailcontents .scrollcontents div span{
     color:black;
+}
+.skyblue-theme .servicediv:hover{
+    color:dodgerblue;
+    box-shadow:0px 0px 5px 5px rgba(30,144,255,0.5);
 }
 
 
@@ -962,6 +1004,38 @@ body.dark-mode .detailcontents .scrollcontents div{
     color:whitesmoke;
     box-shadow:0px 0px 1px rgba(255,255,255,0.9);
     background:linear-gradient(135deg,rgb(70,70,70),rgb(40,40,40));
+}
+body.dark-mode .servicediv:hover{
+    color:blue;
+    box-shadow:0px 0px 5px 5px rgba(0,0,255,0.5);
+}
+body.dark-mode.red-theme .servicediv:hover{
+    color:red;
+    box-shadow:0px 0px 5px 5px rgba(255,0,0,0.5);
+}
+body.dark-mode.violet-theme .servicediv:hover{
+    color:darkviolet;
+    box-shadow:0px 0px 5px 5px rgba(148,0,211,0.5);
+}
+body.dark-mode.green-theme .servicediv:hover{
+    color:limegreen;
+    box-shadow:0px 0px 5px 5px rgba(50,205,50,0.5);
+} 
+body.dark-mode.yellow-theme .servicediv:hover{
+    color:gold;
+    box-shadow:0px 0px 5px 5px rgba(255,215,0,0.5);
+} 
+body.dark-mode.orange-theme .servicediv:hover{
+    color:#fa5b0f;
+    box-shadow:0px 0px 5px 5px rgba(250,91,15,0.5);
+} 
+body.dark-mode.pink-theme .servicediv:hover{
+    color:deeppink;
+    box-shadow:0px 0px 5px 5px rgba(255,20,147,0.5);
+}
+body.dark-mode.skyblue-theme .servicediv:hover{
+    color:dodgerblue;
+    box-shadow:0px 0px 5px 5px rgba(30,144,255,0.5);
 }
 body.dark-mode .detailcontents{
     box-shadow:inset 0px 0px 1px rgba(255,255,255,0.9);
