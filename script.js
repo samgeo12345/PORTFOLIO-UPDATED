@@ -11,25 +11,25 @@ document.addEventListener("DOMContentLoaded",function(){
         procontent.style.display="none";
     });
     prodiv.addEventListener('mouseover',function(event){
-        procontent.style.display="block";
+        procontent.style.display="flex";
     });
     prodiv2.addEventListener('mouseout',function(event){
         procontent2.style.display="none";
     });
     prodiv2.addEventListener('mouseover',function(event){
-        procontent2.style.display="block";
+        procontent2.style.display="flex";
     });
     prodiv3.addEventListener('mouseout',function(event){
         procontent3.style.display="none";
     });
     prodiv3.addEventListener('mouseover',function(event){
-        procontent3.style.display="block";
+        procontent3.style.display="flex";
     });
     prodiv4.addEventListener('mouseout',function(event){
         procontent4.style.display="none";
     });
     prodiv4.addEventListener('mouseover',function(event){
-        procontent4.style.display="block";
+        procontent4.style.display="flex";
     });
 });
 document.addEventListener("DOMContentLoaded",function(){
