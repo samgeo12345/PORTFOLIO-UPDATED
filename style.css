@@ -326,18 +326,21 @@ body{
 .servicecontentsdiv{
     display:flex;
     margin:auto;
+    flex-wrap:wrap;
     margin-top:3%;
     width:75%;
     justify-content:center;
     text-align:center;
     align-items:center;
-    gap:23px;
+    gap:30px;
 }
 .servicediv{
+    flex:1 1 calc(33.333% - 30px);
     width:42%;
     padding:4%;
     background:linear-gradient(135deg,whitesmoke,white);
-    box-shadow:0px 0px 5px rgba(0,0,0,0.3);
+    box-shadow:0px 0px 1px rgba(0,0,0,0.9);
+    border-radius:10px;
     transition:.3s ease-in-out;
 }
 .servicediv:hover{
@@ -388,7 +391,10 @@ body{
 .pro div,.pro2 div,.pro3 div,.pro4 div{
     margin:auto;
     text-align:center;
-    margin-top:12%;
+    align-items:center;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
     width:80%;
 }
 .pro p,.pro2 p,.pro3 p,.pro4 p{
@@ -471,7 +477,7 @@ body{
 }
 .bottombardiv{
     text-align:center;
-    padding:0.5%;
+    padding:2%;
     color:white;
     background-color:rgb(30,30,30);
 }
@@ -1143,6 +1149,9 @@ body.dark-mode .bottombardiv i{
         border-bottom-left-radius:15px;
         box-shadow:-5px 5px 5px rgba(0,0,0,0.3);
     }
+    .servicediv{
+        flex:1 1 calc(50% - 20px);
+    }
     body.dark-mode .nav .optionsdiv{
         background:linear-gradient(225deg,rgb(40,40,40),rgb(30,30,30));
         box-shadow:-5px 5px 5px rgba(0,0,0,0.3);
@@ -1259,9 +1268,11 @@ body.dark-mode .bottombardiv i{
     .skill i{
         font-size:20px;
     }
-    
     .homesecdiv{
         margin-top:10%;
+    }
+    .servicecontentsdiv{
+        width:80%;
     }
     .pro div,.pro2 div,.pro3 div,.pro4 div{
         font-size:13px;
@@ -1281,5 +1292,8 @@ body.dark-mode .bottombardiv i{
     }
     .nav .optionsdiv p{
         display:block;
+    }
+    .servicecontentsdiv{
+        width:85%;
     }
 }
