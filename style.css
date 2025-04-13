@@ -1173,9 +1173,6 @@ body.dark-mode .bottombardiv i{
         padding:8% 5%;
         justify-content:center;
     }
-    .pro div,.pro2 div,.pro3 div,.pro4 div{
-        margin-top:4.5%;
-    }
 }
 @media(max-width:700px){
     .skills,.servicecontentsdiv,
@@ -1215,7 +1212,6 @@ body.dark-mode .bottombardiv i{
     }
     .pro div,.pro2 div,.pro3 div,.pro4 div{
         font-size:larger;
-        margin-top:12%;
     }
 }
 @media(max-width:600px){
@@ -1240,7 +1236,6 @@ body.dark-mode .bottombardiv i{
     }
     .pro div,.pro2 div,.pro3 div,.pro4 div{
         font-size:15px;
-        margin-top:12%;
     }
 }
 @media(max-width:500px){
@@ -1259,9 +1254,6 @@ body.dark-mode .bottombardiv i{
    
     .homesecdiv{
         margin-top:10%;
-    }
-    .pro div,.pro2 div,.pro3 div,.pro4 div{
-        margin-top:8%;
     }
 }
 @media(max-width:400px){
