@@ -196,8 +196,7 @@ body{
 }
 .detailcontents{
     position:absolute;
-    backdrop-filter:blur(8px);
-    background-color:rgb(245,245,245,0.5);
+    background-color:whitesmoke;
     width:100%;
     left:100%;
     display:flex;
