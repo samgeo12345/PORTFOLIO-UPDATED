@@ -250,11 +250,13 @@ body{
 .skills{
     display:flex;
     justify-content:center;
+    flex-wrap:wrap;
     align-items:center;
+    gap:30px;
 }
 .skill{
+    flex:1 1 calc(50% - 20px);
     width:50%;
-    margin:1%;
     padding:2% 0%;
     position:relative;
     overflow:hidden;
@@ -1186,6 +1188,7 @@ body.dark-mode .bottombardiv i{
         margin-top:5%;
     }
     .skill{
+        flex:1 1 calc(100%);
         width:100%;
         text-align:left;
         padding-top:3.5%;
@@ -1215,10 +1218,9 @@ body.dark-mode .bottombardiv i{
     }
 }
 @media(max-width:600px){
-    .skill{
-        margin-top:2%;
+    .skills{
+        gap:20px;
     }
-    
     .homesecdiv{
         margin-top:10%;
     }
