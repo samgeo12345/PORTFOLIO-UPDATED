@@ -7,12 +7,13 @@
     <title>samgeo'</title>
     <link rel="icon" href="img/samgeo1-transformed.jpeg">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="https://kit.fontawesome.com/76f5d35c55.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="nav" id="home">
-        <div class="headdiv"><h2>sam<span>geo'</span></h2></div>
-        <div id="optionsdiv" class="optionsdiv">
+        <div class="headdiv" data-aos="slide-right"><h2>sam<span>geo'</span></h2></div>
+        <div id="optionsdiv" class="optionsdiv" data-aos="slide-down">
             <a href="#home">Home</a>
             <a href="#about">About</a>
             <a href="#skill">Skill</a>
@@ -31,20 +32,20 @@
             </div>
             <p><i class="far fa-copyright"></i> 2024</p>
         </div>
-        <div class="togglediv"><i id="modeToggle" class="fas fa-brush"></i><a id="modeToggles"><i class="fas fa-moon"></i></a><a id="togglediv2"><i class="fas fa-bars"></i></a></div>
+        <div class="togglediv" data-aos="slide-left"><i id="modeToggle" class="fas fa-brush"></i><a id="modeToggles"><i class="fas fa-moon"></i></a><a id="togglediv2"><i class="fas fa-bars"></i></a></div>
     </div>
     <div class="maindiv">
         <div class="homesecdiv">
             <img class="backgroundimg" src="img/wp12621393-cool-white-computer-wallpapers.jpg" alt="">
             <div>
-                <h1>Hi,<br>I'm <span id="name">Samuel George</span><br>Web Developer.</h1>
-                <a href="img/Resume (1).pdf" style="margin-left:0;" download><button>Resume</button></a><br><br>
-                <a href="" style="margin-left:0;"><i class="fa-brands fa-facebook"></i></a>
-                <a href="https://github.com/samgeo12345"><i class="fa-brands fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/samuel-george-j004"><i class="fa-brands fa-linkedin-in"></i></a>
-                <a href="https://wa.me/+919566033767"><i class="fa-brands fa-whatsapp"></i></a>
+                <h1  data-aos="slide-right">Hi,<br>I'm <span id="name">Samuel George</span><br>Web Developer.</h1>
+                <a href="img/Resume (1).pdf" style="margin-left:0;" download><button data-aos="slide-right">Resume</button></a><br><br>
+                <a href="" style="margin-left:0;"><i class="fa-brands fa-facebook" data-aos="slide-up"></i></a>
+                <a href="https://github.com/samgeo12345"><i class="fa-brands fa-github" data-aos="slide-up"></i></a>
+                <a href="https://www.linkedin.com/in/samuel-george-j004"><i class="fa-brands fa-linkedin-in" data-aos="slide-up"></i></a>
+                <a href="https://wa.me/+919566033767"><i class="fa-brands fa-whatsapp" data-aos="slide-up"></i></a>
             </div>
-            <img class="photoimg" src="img/—Pngtree—programmer working on code with_19295155.png" alt="">
+            <img data-aos="slide-left" class="photoimg" src="img/—Pngtree—programmer working on code with_19295155.png" alt="">
         </div>
         <h1 id="about">About'</h1>
         <div class="aboutsecdiv">
@@ -172,7 +173,7 @@
         <h1 id="contact">About'</h1>
         <div class="contactsecdiv">
             <h1 class="sections"><span>Cont</span>act'<hr></h1>
-            <div class="contactcontentsdiv">
+            <div class="contactcontentsdiv" >
                 <div class="contactdiv">
                     <h2>Contact me</h2>
                     <p>Get in touch with me easily through the contact section. Whether you have questions, collaboration ideas, or just want to say hello, I'm here to connect!</p>
@@ -230,6 +231,10 @@
             }
         }
     </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>    
     <script src="script.js"></script>
 </body>
 </html>
