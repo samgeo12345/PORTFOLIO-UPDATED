@@ -1225,6 +1225,10 @@ body.dark-mode .bottombardiv i{
     .homesecdiv{
         margin-top:10%;
     }
+    .aboutcontentdiv,.skillcontentsdiv,
+    .servicecontentsdiv,.projectcontentsdiv,.contactcontentsdiv{
+        margin-top:10%;
+    }
 }
 @media(max-width:570px){
    
