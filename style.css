@@ -98,7 +98,7 @@ body{
 }
 .nav .socialdiv,.nav .optionsdiv hr,.nav .optionsdiv h3,
 .nav .optionsdiv p{
-        display:none;
+    display:none;
 }
 .nav #optionsdiv p{
     margin-top:18%;
@@ -180,7 +180,7 @@ body{
     justify-content:center;
 }
 .aboutcontentdiv div{
-    padding:5%;
+    padding:0% 5%;
     width:100%;
 }
 .aboutcontentdiv div a{
@@ -329,7 +329,6 @@ body{
     display:flex;
     margin:auto;
     flex-wrap:wrap;
-    margin-top:3%;
     width:75%;
     justify-content:center;
     text-align:center;
@@ -362,7 +361,6 @@ body{
 }
 .projectcontentsdiv{
     margin:auto;
-    margin-top:8%;
     display:flex;
     justify-content:center;
     align-items:center;
@@ -417,7 +415,6 @@ body{
 .contactcontentsdiv{
     display:flex;
     justify-content:center;
-    margin-top:8%;
 }
 .contactdiv{
     width:100%;
@@ -496,6 +493,10 @@ body{
 }
 #about,#skill,#service,#project,#contact{
     color:white;
+}
+.aboutcontentdiv,.skillcontentsdiv,
+.servicecontentsdiv,.projectcontentsdiv,.contactcontentsdiv{
+    margin-top:10%;
 }
 
 /* Red Theme */
