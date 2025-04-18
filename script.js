@@ -155,12 +155,12 @@ document.addEventListener('DOMContentLoaded', (event) => {
     togglediv2.onclick=function(){
         if(optionsdiv.style.right=="0%"){
             optionsdiv.style.right="-100%";
-            optionsdiv.style.transition=".3s ease-in-out";
+            optionsdiv.style.transition=".4s ease";
             togglediv2.innerHTML='<i class="fa-solid fa-bars"></i>';
         }
         else{
             optionsdiv.style.right="0%";
-            optionsdiv.style.transition=".3s ease-in-out";
+            optionsdiv.style.transition=".4s ease";
             togglediv2.innerHTML='<i class="fa-solid fa-xmark"></i>';
         }
     }
