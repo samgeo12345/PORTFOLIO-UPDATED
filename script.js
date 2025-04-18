@@ -153,12 +153,14 @@ document.addEventListener('DOMContentLoaded', (event) => {
     togglediv2=document.getElementById("togglediv2");
     optionsdiv=document.getElementById("optionsdiv");
     togglediv2.onclick=function(){
-        if(optionsdiv.style.display=="block"){
-            optionsdiv.style.display="none";
+        if(optionsdiv.style.right=="0%"){
+            optionsdiv.style.right="-100%";
+            optionsdiv.style.transition=".3s ease-in-out";
             togglediv2.innerHTML='<i class="fa-solid fa-bars"></i>';
         }
         else{
-            optionsdiv.style.display="block";
+            optionsdiv.style.right="0%";
+            optionsdiv.style.transition=".3s ease-in-out";
             togglediv2.innerHTML='<i class="fa-solid fa-xmark"></i>';
         }
     }
