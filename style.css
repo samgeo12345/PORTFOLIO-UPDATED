@@ -93,6 +93,9 @@ body{
 .nav .optionsdiv h3{
     color:blue;
 }
+.nav .socialdiv hr{
+    width:100%;
+}
 .nav .socialdiv i{
     font-size:x-large;
     color:dimgray;
