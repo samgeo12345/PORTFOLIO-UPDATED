@@ -1163,8 +1163,8 @@ body.dark-mode .bottombardiv i{
         flex:1 1 calc(50% - 20px);
     }
     body.dark-mode .nav .optionsdiv{
-        background:linear-gradient(225deg,rgb(40,40,40),rgb(30,30,30));
-        box-shadow:-5px 5px 5px rgba(0,0,0,0.3);
+        backdrop-filter:blur(12px);
+        background-color:rgba(0,0,0,0.6);
     }
     body.dark-mode .nav .togglediv #togglediv2{
         color:whitesmoke;

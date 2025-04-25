@@ -149,9 +149,15 @@ document.addEventListener('DOMContentLoaded', (event) => {
       }
     });
   });
-  document.addEventListener("DOMContentLoaded",function(){
+document.addEventListener("DOMContentLoaded",function(){
     togglediv2=document.getElementById("togglediv2");
     optionsdiv=document.getElementById("optionsdiv");
+    anchor1=document.getElementById("anchor1");
+    anchor2=document.getElementById("anchor2");
+    anchor3=document.getElementById("anchor3");
+    anchor4=document.getElementById("anchor4");
+    anchor5=document.getElementById("anchor5");
+    anchor6=document.getElementById("anchor6");
     togglediv2.onclick=function(){
         if(optionsdiv.style.right=="0%"){
             optionsdiv.style.right="-100%";
@@ -164,8 +170,36 @@ document.addEventListener('DOMContentLoaded', (event) => {
             togglediv2.innerHTML='<i class="fa-solid fa-xmark"></i>';
         }
     }
+    anchor1.onclick=function(){
+        optionsdiv.style.right="-100%";
+        togglediv2.innerHTML='<i class="fa-solid fa-bars"></i>';
+    }
+    anchor2.onclick=function(){
+        optionsdiv.style.right="-100%";
+        togglediv2.innerHTML='<i class="fa-solid fa-bars"></i>';
+    }
+    anchor3.onclick=function(){
+        optionsdiv.style.right="-100%";
+        togglediv2.innerHTML='<i class="fa-solid fa-bars"></i>';
+    }
+    anchor4.onclick=function(){
+        optionsdiv.style.right="-100%";
+        togglediv2.innerHTML='<i class="fa-solid fa-bars"></i>';
+    }
+    anchor5.onclick=function(){
+        optionsdiv.style.right="-100%";
+        togglediv2.innerHTML='<i class="fa-solid fa-bars"></i>';
+    }
+    anchor5.onclick=function(){
+        optionsdiv.style.right="-100%";
+        togglediv2.innerHTML='<i class="fa-solid fa-bars"></i>';
+    }
+    anchor6.onclick=function(){
+        optionsdiv.style.right="-100%";
+        togglediv2.innerHTML='<i class="fa-solid fa-bars"></i>';
+    }
   });
-  document.addEventListener("DOMContentLoaded",function(){
+document.addEventListener("DOMContentLoaded",function(){
     morecontents=document.getElementById("morecontents");
     detailcontents=document.getElementById("detailcontents");
     cut=document.getElementById("cut");
