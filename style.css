@@ -1240,6 +1240,9 @@ body.dark-mode .bottombardiv i{
     .homesecdiv{
         margin-top:10%;
     }
+    .bottombardiv{
+        padding:6% 0%;
+    }
 }
 @media(max-width:550px){
    
