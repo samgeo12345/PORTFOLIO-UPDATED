@@ -173,7 +173,8 @@ body{
 .aboutsecdiv img{
     block-size:400px;
     margin-left:10%;
-    box-shadow:10px 10px 10px rgba(0,0,0,0.3);
+    border-radius:10px;
+    box-shadow:0px 0px 1px rgba(0,0,0,0.9);
 }
 .aboutcontentdiv{
     display:flex;
